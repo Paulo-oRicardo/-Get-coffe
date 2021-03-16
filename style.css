@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background: url("../assets/forma1.svg");
+  background-position: right 40vw bottom 90vh left 10vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+  align-items: center;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  /* border-bottom: 1px solid #ccc; */
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+ul li {
+  list-style-type: none;
+  font-weight: 700;
+}
+
+li a {
+  font-size: 18px;
+  color: #024242;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.text p {
+  font-size: 2.2rem;
+  text-align: left;
+  width: 32rem;
+}
+
+section button {
+  width: 290px;
+  height: 58.44px;
+  color: white;
+  font-size: 1.25rem;
+  background: #fca60f;
+  border: none;
+  border-radius: 0.15rem;
+  margin: 3.7rem 0 1.6rem 0;
+  cursor: pointer;
+}
+
+main img {
+  margin: 0 auto;
+  width: 11.375rem;
+  height: 19.0625rem;
+}
+.icons {
+  text-align: left;
+}
+.icons a {
+  text-decoration: none;
+  color: rgb(190, 10, 10);
+  font-size: 1.5rem;
+  padding: 0 2px;
+}
+.scroll-down {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  main img {
+    display: none;
+  }
+  header nav {
+    display: block;
+    text-align: center;
+    padding-top: 0.7rem;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .text{
+    margin: 0 auto;
+  }
+  .text p {
+    font-size: 1.7rem;
+    width: 100%;
+    margin-bottom: 4.5rem;
+    text-align: center;
+  }
+  main {
+    grid-template-columns: none;
+  }
+  section button {
+    margin: 0 auto;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .icons {
+   width: 100%;
+   bottom: 0;
+   position: fixed;
+   text-align: center;
+  }
+}
